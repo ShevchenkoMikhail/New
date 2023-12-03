@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #ff4757;
+    --text-color: #2f3542;
+    --background-color: #f1f3f8;
+    --font-stack: 'Helvetica Neue', sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-list li {
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.category-list li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.category-list li a:hover {
+    background-color: #ddd;
+    box-shadow: 0px 10px 10px rgba(54, 54, 54, 0.1); /* Тень */
+}
+
+@media (min-width: 600px) {
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .category-list li a {
+        padding: 15px;
+    }
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
